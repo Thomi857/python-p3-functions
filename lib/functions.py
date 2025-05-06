@@ -1,16 +1,21 @@
 #!/usr/bin/env python3
 
 def greet_programmer():
-    pass
+    print(f"Hello, programmer!")
 
 def greet(name):
-    pass
+    print(f"Hello, {name}!")
 
-def greet_with_default(name="programmer"):
-    pass
+    # greet("Guido van Rossum")
+
+def greet_with_default(name ="programmer"):
+    print(f"Hello, {name}!")
 
 def add(num1, num2):
-    pass
+    return num1 + num2
+add(1, 2)
 
 def halve(number):
-    pass
+    if not isinstance(number, (int, float)):
+        raise TypeError("Please use numeric types (int or float) only")
+    return number / 2
